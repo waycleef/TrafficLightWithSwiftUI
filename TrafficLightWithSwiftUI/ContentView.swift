@@ -40,7 +40,6 @@ struct ContentView: View {
     private func nextColor() {
         if redLight < 1 && yellowLight < 1 && greenLight < 1 {
             redLight = 1
-            print(redLight)
         } else if redLight == 1 {
             redLight = 0.3
             yellowLight = 1
@@ -48,11 +47,9 @@ struct ContentView: View {
         } else if yellowLight == 1 {
             yellowLight = 0.3
             greenLight = 1
-            print("3")
         } else if greenLight == 1 {
             greenLight = 0.3
             redLight = 1
-            print("4")
         }
     }
 
